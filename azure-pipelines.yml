@@ -1,7 +1,6 @@
 parameters:
 - name: Default
   displayName: Pool Image
-  type: string
   default: ['agent.name -equals mydockeragent', 'npm']
 
 trigger:
