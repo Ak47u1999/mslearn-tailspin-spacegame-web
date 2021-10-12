@@ -4,8 +4,8 @@ trigger:
 pool:
   name: Default
   demands:
-   - agent.name -equals mydockeragent  demands:
-  - npm
+   - agent.name -equals mydockeragent
+   - npm
 
 variables:
   buildConfiguration: 'Release'
