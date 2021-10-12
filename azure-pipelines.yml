@@ -1,13 +1,15 @@
+parameters:
+- name: Default
+  displayName: Pool Image
+  type: string
+  default: mydockeragent
+
 trigger:
 - '*'
 
-parameters:
-  pool: 'Default'
-  demands: ['agent.name -equals mydockeragent', 'npm']
-
 pool:
-  name: ${{parameters.pool}}
-  demands: ${{parameters.demands}}
+  name: ${{parameters.name}}
+  demands: ${{parameters.default}}
 variables:
   buildConfiguration: 'Release'
 
