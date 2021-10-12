@@ -2,8 +2,9 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'ubuntu-20.04'
+  name: Default
   demands:
+   - agent.name -equals mydockeragent  demands:
   - npm
 
 variables:
